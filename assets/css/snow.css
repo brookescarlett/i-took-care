@@ -12,7 +12,7 @@
 /*------------------------------------------------------------------
   [Typography]
 
-  Body:     15px/1.65 Cutive Mono, sans-serif;
+  Body:     15px/1.65 Work Sans, sans-serif;
   Headings: Playfair Display, serif
 
   Note: Most of font sizes are relative to the base font size (rem)
@@ -425,8 +425,7 @@ html {
 }
 
 body {
-    /*font-family: "Work Sans", sans-serif*/
-    font-family: "Cutive Mono"
+    font-family: "Work Sans", sans-serif;
     line-height: 1.65;
     letter-spacing: 0.004em;
     -webkit-font-smoothing: antialiased;
@@ -4351,12 +4350,10 @@ img.rounded {
 
 .nk-ibox-1 .nk-ibox-cont {
     margin-left: 72px;
-    font-family: 'Cutive Mono';
 }
 
 .nk-ibox-1 .nk-ibox-title {
     font-weight: 500;
-    font-family: 'Cutive Mono';
 }
 
 .nk-ibox-1 .nk-ibox-text {
@@ -4369,20 +4366,17 @@ img.rounded {
 /* Style 2 */
 .nk-ibox-2 {
     position: relative;
-    font-family: 'Cutive Mono';
 }
 
 .nk-ibox-2 .nk-ibox-cont {
     padding-top: 7px;
-    font-family: 'Cutive Mono';
 }
 
 .nk-ibox-2 .nk-ibox-title {
-    font-weight: 700;
+    font-weight: 500;
     font-size: 0.96rem;
     text-transform: uppercase;
     color: #171717;
-    font-family: 'Cutive Mono';
 }
 
 /* Style 3 */
@@ -4540,7 +4534,7 @@ img.rounded {
 }
 
 .nk-counter-3 .nk-counter-title {
-    font-family: "Cutive Mono", sans-serif;
+    font-family: "Work Sans", sans-serif;
     font-weight: normal;
     line-height: 1;
 }
@@ -4556,13 +4550,11 @@ img.rounded {
 
 .nk-contact-info > li + li {
     margin-top: 12px;
-    font-family: 'Cutive Mono';
 }
 
 .nk-contact-info > li > strong {
     color: #171717;
     padding-right: 5px;
-    font-family: 'Cutive Mono';
 }
 
 /*---------------------------
@@ -4887,7 +4879,7 @@ blockquote.nk-blockquote-style-1 > p:after {
 }
 
 blockquote.nk-blockquote-style-1 cite {
-    font-family: "Cutive Mono", sans-serif;
+    font-family: "Work Sans", sans-serif;
     font-size: 0.96rem;
     font-weight: 500;
     font-style: normal;
@@ -5221,7 +5213,6 @@ blockquote.nk-blockquote-style-1 cite {
 
 .nk-carousel-3 .nk-portfolio-title,
 .nk-carousel-3 .nk-portfolio-sub-title {
-    font-family: "Cutive Mono";
     display: none;
 }
 
@@ -5492,7 +5483,6 @@ blockquote.nk-blockquote-style-1 cite {
     background-color: #fff;
     border: none;
     border-radius: 0;
-    font-family: 'Cutive Mono';
 }
 
 select.form-control {
