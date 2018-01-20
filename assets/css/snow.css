@@ -3902,7 +3902,11 @@ img.rounded {
 }
 
 .nk-header-title.nk-header-title-lg .nk-header-table {
-    height: 570px;
+    height: 540px;
+}
+
+@media (max-width: 400px) {
+    .nk-header-title.nk-header-title-lg .nk-header-table {height: 400px;}   
 }
 
 .nk-header-title.nk-header-title-xl .nk-header-table {
