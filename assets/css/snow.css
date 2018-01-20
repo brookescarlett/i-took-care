@@ -4353,7 +4353,7 @@ img.rounded {
     width: 50px;
     height: 50px;
     line-height: 50px;
-    text-align: center;
+    text-align: top;
     margin-top: 3px;
 }
 
@@ -4375,10 +4375,12 @@ img.rounded {
 /* Style 2 */
 .nk-ibox-2 {
     position: relative;
+    font-family: 'Cutive Mono';
 }
 
 .nk-ibox-2 .nk-ibox-cont {
-    padding-top: 7px;
+    padding-top: -1px;
+    text-align: top;
 }
 
 .nk-ibox-2 .nk-ibox-title {
@@ -4391,7 +4393,7 @@ img.rounded {
 /* Style 3 */
 .nk-ibox-3 {
     position: relative;
-    text-align: center;
+    text-align: top;
 }
 
 .nk-ibox-3 .nk-ibox-icon {
