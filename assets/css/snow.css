@@ -3032,7 +3032,7 @@ img.rounded {
 /* Navbar */
 .nk-navbar {
     position: relative;
-    padding: 33px 0;
+    padding: 15px 0;
     font-size: 0.96rem;
     z-index: 1000;
     transition: .3s background-color;
