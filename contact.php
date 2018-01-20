@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 /*
  *  CONFIGURE EVERYTHING HERE
  */
@@ -83,11 +84,31 @@ try
 
     foreach ($_POST as $key => $value) {
         // If the field exists in the $fields array, include it in the email 
+=======
+
+// configure
+$from = 'Demo contact form <demo@domain.com>';
+$sendTo = 'xobsyxo@mac.com';
+$subject = 'New message from contact form';
+$fields = array('name' => 'Name', 'surname' => 'Surname', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message'); // array variable name => Text to appear in email
+$okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
+$errorMessage = 'There was an error while submitting the form. Please try again later';
+
+// let's do the sending
+
+try
+{
+    $emailText = "You have new message from contact form\n=============================\n";
+
+    foreach ($_POST as $key => $value) {
+
+>>>>>>> 9a3fda8404696d87677b6e9001a777a465e17bd3
         if (isset($fields[$key])) {
             $emailText .= "$fields[$key]: $value\n";
         }
     }
 
+<<<<<<< HEAD
     // All the neccessary headers for the email.
     $headers = array('Content-Type: text/plain; charset="UTF-8";',
         'From: ' . $from,
@@ -97,6 +118,9 @@ try
     
     // Send email
     mail($sendTo, $subject, $emailText, implode("\n", $headers));
+=======
+    mail($sendTo, $subject, $emailText, "From: " . $from);
+>>>>>>> 9a3fda8404696d87677b6e9001a777a465e17bd3
 
     $responseArray = array('type' => 'success', 'message' => $okMessage);
 }
@@ -105,6 +129,7 @@ catch (\Exception $e)
     $responseArray = array('type' => 'danger', 'message' => $errorMessage);
 }
 
+<<<<<<< HEAD
 
 // if requested by AJAX request return JSON response
 if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
@@ -118,3 +143,15 @@ if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQ
 else {
     echo $responseArray['message'];
 }
+=======
+if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
+    $encoded = json_encode($responseArray);
+    
+    header('Content-Type: application/json');
+    
+    echo $encoded;
+}
+else {
+    echo $responseArray['message'];
+}
+>>>>>>> 9a3fda8404696d87677b6e9001a777a465e17bd3

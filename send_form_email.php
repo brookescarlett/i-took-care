@@ -87,4 +87,8 @@ Thank you for contacting us. We will be in touch with you very soon.
 <?php
  
 }
+<<<<<<< HEAD
 ?>
+=======
+?>
+>>>>>>> 9a3fda8404696d87677b6e9001a777a465e17bd3
